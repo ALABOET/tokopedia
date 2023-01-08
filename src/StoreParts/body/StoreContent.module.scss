@@ -1,0 +1,11 @@
+.content_root {
+  .bodyComponents_homePages {
+    background: rgb(0, 1, 23);
+    height: 100vh;
+    color: white;
+    padding: 20px 20%;
+    &Header {
+      text-align: center;
+    }
+  }
+}

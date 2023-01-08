@@ -1,0 +1,45 @@
+.bodyComponents_homePages {
+  &Style {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  &Header {
+    margin: 100px 0 100px 0;
+    text-align: center;
+  }
+}
+.bodyComponents_homePageStyle {
+  display: flex;
+}
+.bodyComponents_header {
+  display: flex;
+  justify-content: space-between;
+}
+.bodyComponents_root {
+  background: floralwhite;
+  padding: 20px 20%;
+  height: 100vh;
+  .bodyComponents_body {
+    margin-top: 200px;
+    text-align: center;
+  }
+  .logo {
+    width: 65px;
+    height: 75px;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    li {
+      &:hover {
+        color: green;
+        cursor: pointer;
+      }
+    }
+  }
+}

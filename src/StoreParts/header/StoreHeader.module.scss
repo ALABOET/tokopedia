@@ -1,0 +1,13 @@
+.header_root {
+  display: flex;
+  justify-content: space-between;
+  background: dimgrey;
+  padding: 10px;
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+
+  .logo {
+    width: 120px;
+  }
+}
