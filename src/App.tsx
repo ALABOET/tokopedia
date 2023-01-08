@@ -1,10 +1,10 @@
 import React from 'react';
-import Store from './StoreParts/Store';
+import Tokopedia from './Tokopedia/Tokopedia';
 
 function App() {
   return (
     <>
-      <Store />
+      <Tokopedia />
     </>
   );
 }
