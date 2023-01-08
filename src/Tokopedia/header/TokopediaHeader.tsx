@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Button } from "@mui/material";
-import classNames from './StoreHeader.module.scss'
+import classNames from './TokopediaHeader.module.scss'
 
-const StoreHeader: FC = () => {
+const TokopediaHeader: FC = () => {
   return (
     <div className={classNames.header_root}>
       <img
@@ -19,4 +19,4 @@ const StoreHeader: FC = () => {
   )
 };
 
-export default StoreHeader;
+export default TokopediaHeader;

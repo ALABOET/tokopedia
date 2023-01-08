@@ -3,7 +3,7 @@ interface stylesData {
     name: string,
     src: string,
 }
-class MainStore {
+class Store {
     public pageIsLoaded = false;
     public stylesArray: stylesData[] = [{
         name: 'Homepage Style 1',
@@ -40,5 +40,5 @@ class MainStore {
     }
 }
 
-const store = new MainStore();
+const store = new Store();
 export default store;

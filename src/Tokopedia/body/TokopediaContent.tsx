@@ -1,12 +1,12 @@
-import classNames from './StoreContent.module.scss'
+import classNames from './TokopediaContent.module.scss'
 import { Fade } from '@mui/material';
 import { observer } from 'mobx-react';
 import IntroductionSection from './bodyComponents/IntroductionSection';
-import store from '../../stores/MainStore';
+import store from '../../store/store';
 import HomepagesHeaderSection from './bodyComponents/HomepagesHeaderSection';
 import HomepagesStyleSection from './bodyComponents/HomepagesStyleSection';
 
-const StoreContent = observer(() => {
+const TokopediaContent = observer(() => {
   return (
     <Fade
       in={store.pageIsLoaded}
@@ -23,4 +23,4 @@ const StoreContent = observer(() => {
   )
 });
 
-export default StoreContent;
+export default TokopediaContent;
