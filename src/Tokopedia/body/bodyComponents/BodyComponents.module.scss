@@ -18,6 +18,13 @@
   display: flex;
   justify-content: space-between;
 }
+.bodyComponents_builderSection {
+  margin-top: 100px;
+  padding: 20px 20%;
+  &__content {
+    display: flex;
+  }
+}
 .bodyComponents_root {
   background: floralwhite;
   padding: 20px 20%;
