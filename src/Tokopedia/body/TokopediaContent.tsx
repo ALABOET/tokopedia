@@ -1,4 +1,4 @@
-import classNames from './TokopediaContent.module.scss'
+import classNames from './bodyComponents/BodyComponents.module.scss'
 import { Fade } from '@mui/material';
 import { observer } from 'mobx-react';
 import IntroductionSection from './bodyComponents/IntroductionSection';
@@ -13,7 +13,7 @@ const TokopediaContent = observer(() => {
       in={store.pageIsLoaded}
       timeout={1500}
     >
-      <div className={classNames.content_root}>
+      <div>
         <IntroductionSection />
         <div className={classNames.bodyComponents_homePages}>
           <HomepagesHeaderSection />

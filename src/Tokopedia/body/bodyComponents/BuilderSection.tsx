@@ -1,13 +1,15 @@
 import { FC } from 'react';
 import classNames from '../bodyComponents/BodyComponents.module.scss'
 import { useInView } from 'react-intersection-observer';
-import {Fade, Typography} from "@mui/material";
+import { Fade, Typography } from '@mui/material';
+import { useMedia } from 'use-media';
 
 const BuilderSection: FC = () => {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
     triggerOnce: true,
   });
+  const isMobile = useMedia( '(max-width: 769px)');
   return (
     <div
       className={classNames.bodyComponents_builderSection}
@@ -18,7 +20,7 @@ const BuilderSection: FC = () => {
         timeout={1500}
       >
         <div className={classNames.bodyComponents_builderSection__content}>
-          <div>
+          <div style={{ alignSelf: 'center' }}>
             <img
               src="/logos/builder-logo.png"
               style={{ width: '100px'}}
@@ -28,10 +30,10 @@ const BuilderSection: FC = () => {
               and speed up the process of building them.
             </Typography>
             </div>
-          <img
+          {!isMobile && <img
             src="/pics/builder-main.jpg"
             style={{ width: '450px'}}
-          />
+          />}
         </div>
       </Fade>
     </div>
