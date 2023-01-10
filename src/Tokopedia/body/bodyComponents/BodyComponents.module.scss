@@ -1,26 +1,37 @@
 .bodyComponents_homePages {
+  background: black;
+  padding: 20px 20% 60px 20%;
+  color: white;
+  @media screen and (max-width: 769px) {
+    padding: 20px 5%;
+  }
   &Style {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
+    @media screen and (max-width: 769px) {
+      justify-content: center;
+    }
   }
   &Header {
     margin: 100px 0 100px 0;
     text-align: center;
   }
 }
-.bodyComponents_homePageStyle {
-  display: flex;
-}
 .bodyComponents_header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: initial;
 }
 .bodyComponents_builderSection {
   margin-top: 100px;
   padding: 20px 20%;
+  @media screen and (max-width: 769px) {
+    padding: 20px 5%;
+    margin-top: 50px;
+  }
   &__content {
     display: flex;
   }
@@ -29,9 +40,24 @@
   background: floralwhite;
   padding: 20px 20%;
   height: 100vh;
+  .list {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+  }
+  @media screen and (max-width: 769px) {
+    padding: 20px 5%;
+  }
   .bodyComponents_body {
     margin-top: 200px;
     text-align: center;
+    @media screen and (max-width: 769px) {
+      margin-top: 160px;
+    }
   }
   .logo {
     width: 65px;

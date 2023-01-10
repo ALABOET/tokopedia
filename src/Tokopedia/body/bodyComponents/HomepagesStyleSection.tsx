@@ -14,7 +14,7 @@ const HomepagesStyleSection: FC = () => {
       ref={ref}
       className={classNames.bodyComponents_homePagesStyle}>
       {store.stylesArray.map((elem, index) => {
-        return <div key={index}>
+        return <div style={{ width: '200px'}} key={index}>
           <HomepagesStyleComponent
             src={`/pics/${elem.src}.jpg`}
             orderNumber={index}
