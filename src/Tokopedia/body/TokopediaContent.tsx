@@ -5,7 +5,7 @@ import IntroductionSection from './bodyComponents/IntroductionSection';
 import store from '../../store/store';
 import HomepagesHeaderSection from './bodyComponents/HomepagesHeaderSection';
 import HomepagesStyleSection from './bodyComponents/HomepagesStyleSection';
-import BuilderSection from "./bodyComponents/BuilderSection";
+import BuilderSection from './bodyComponents/BuilderSection';
 
 const TokopediaContent = observer(() => {
   return (
