@@ -2,6 +2,7 @@ import { FC, useEffect } from 'react';
 import TokopediaHeader from "./header/TokopediaHeader";
 import TokopediaContent from "./body/TokopediaContent";
 import store from "../store/store";
+import TokopediaFooter from "./footer/TokopediaFooter";
 
 const Tokopedia: FC = () => {
   useEffect(() => {
@@ -11,6 +12,7 @@ const Tokopedia: FC = () => {
     <>
       <TokopediaHeader />
       <TokopediaContent />
+      <TokopediaFooter />
     </>
   )
 };
