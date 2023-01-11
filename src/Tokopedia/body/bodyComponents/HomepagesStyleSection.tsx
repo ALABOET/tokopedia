@@ -15,13 +15,14 @@ const HomepagesStyleSection: FC = () => {
       className={classNames.bodyComponents_homePagesStyle}
     >
       {store.stylesArray.map((elem, index) => {
-        return (
+        return <div key={index}>
           <HomepagesStyleComponent
             src={`/pics/${elem.src}.jpg`}
             orderNumber={index}
             isInView={inView}
             name={elem.name}
-          />)
+          />
+        </div>
       })}
     </div>
   )

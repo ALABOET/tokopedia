@@ -1,9 +1,9 @@
 .bodyComponents_homePages {
-  background: black;
-  padding: 20px 20% 60px 20%;
+  background: #1c1b18;
+  padding: 100px 20% 60px 20%;
   color: white;
   @media screen and (max-width: 769px) {
-    padding: 20px 5%;
+    padding: 50px 5%;
   }
   &Style {
     display: flex;
@@ -16,7 +16,6 @@
     }
   }
   &Header {
-    margin: 100px 0 100px 0;
     text-align: center;
   }
 }
@@ -26,11 +25,9 @@
   flex-wrap: initial;
 }
 .bodyComponents_builderSection {
-  margin-top: 100px;
-  padding: 20px 20%;
+  padding: 100px 20%;
   @media screen and (max-width: 769px) {
-    padding: 20px 5%;
-    margin-top: 50px;
+    padding: 50px 5%;
   }
   &__content {
     display: flex;
