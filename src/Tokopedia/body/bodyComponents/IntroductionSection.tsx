@@ -9,34 +9,27 @@ const IntroductionSection: FC = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   return (
     <div className={classNames.bodyComponents_root}>
-      {!isMobile && <div className={classNames.bodyComponents_header}>
-        <img
-          src="/logos/tokopedia-logo.png"
-          className={classNames.logo}
-        />
-        <ul>
-          <li>Demos</li>
-          <li>Featured</li>
-          <li>Purchase Now</li>
-          <li>Video Tutorials</li>
-          <li>Support Center</li>
-       </ul>
-      </div>}
+      <Fade in={isMobile ? menuIsOpen : true}>
+        <div className={classNames.bodyComponents_header}>
+          <img
+            src="/logos/tokopedia-logo.png"
+            className={classNames.logo}
+          />
+          <ul className={classNames.list}>
+            <li>Demos</li>
+            <li>Featured</li>
+            <li>Purchase Now</li>
+            <li>Video Tutorials</li>
+            <li>Support Center</li>
+          </ul>
+        </div>
+      </Fade>
       {isMobile && <IconButton
           onClick={() => setMenuIsOpen(!menuIsOpen)}
           sx={{ position: 'absolute', top: '60px', right: '20px' }}
       >
         <SettingsIcon />
       </IconButton>}
-      <Fade in={menuIsOpen}>
-        <ul className={classNames.list}>
-          <li>Demos</li>
-          <li>Featured</li>
-          <li>Purchase Now</li>
-          <li>Video Tutorials</li>
-          <li>Support Center</li>
-        </ul>
-      </Fade>
       <div className={classNames.bodyComponents_body}>
         <Typography variant="h5">Tokopedia - Fashion Store Elementor <br/> eCommerce Wordpress Theme</Typography>
         <Typography variant="subtitle1">

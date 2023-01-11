@@ -19,7 +19,7 @@ const HomepagesHeaderSection: FC = () => {
         unmountOnExit
         timeout={1000}
        >
-         <div className={classNames.bodyComponents_homePages__content}>
+         <div>
            <Typography variant="h5">Stunning Homepages</Typography>
            <Typography variant="subtitle1">
              If you are planning to build a Fashion Store or Clothing eCommerce website, then Tokopedia
